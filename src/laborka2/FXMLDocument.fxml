@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="269.0" prefWidth="413.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="laborka2.FXMLDocumentController">
+  <BorderPane />
+  <Pane layoutX="107.0" layoutY="46.0" prefHeight="200.0" prefWidth="200.0">
+    <children>
+      <Label fx:id="statusLabel" layoutX="-3.0" layoutY="49.0" text="Uruchom serwer lub połącz jako klient" />
+      <ProgressBar fx:id="progressBar" disable="true" layoutX="-1.0" layoutY="90.0" prefWidth="200.0" progress="0.0" />
+    </children>
+  </Pane>
+  <ToggleButton fx:id="clientButton" layoutX="244.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#clientToggle" prefWidth="155.0" text="Klient" />
+  <ToggleButton fx:id="serverButton" layoutX="14.0" layoutY="25.0" mnemonicParsing="false" onMouseClicked="#serverToggle" prefWidth="155.0" text="Serwer" />
+  <ToggleButton fx:id="chooseButton" disable="true" layoutX="244.0" layoutY="225.0" mnemonicParsing="false" onMouseClicked="#chooseToggle" prefWidth="155.0" text="Wybierz" />
+</AnchorPane>
